@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+    <form action="insertbook" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <select name="catname" class="form-control">
+
+            {% for foo in ar %}
+                <option value="{{ foo }}">{{ foo }}</option>
+            {% endfor %}
+        </select>
+
+     <div class="form-group">
+            <label for=""> enter title </label>
+            <input type="text" class="form-control" id="title" name="title">
+
+        </div>
+     <div class="form-group">
+            <label for=""> enter description </label>
+            <input type="text" class="form-control" id="description" name="description">
+
+        </div>
+     <div class="form-group">
+            <label for=""> enter price </label>
+            <input type="text" class="form-control" id="price" name="price">
+
+        </div>
+     <div class="form-group">
+            <label for=""> enter edition </label>
+            <input type="text" class="form-control" id="edition" name="edition">
+
+        </div>
+     <div class="form-group">
+            <label for=""> enter author </label>
+            <input type="text" class="form-control" id="author" name="author">
+
+        </div>
+     <div class="form-group">
+            <label for=""> enter genre </label>
+            <input type="text" class="form-control" id="genre" name="genre">
+
+        </div>
+     <div class="form-group">
+     <label for=""> enter photo</label>
+            <input type="file" name="photo" id="photo" class="form-control">
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="form-group">
+            <input type="submit" class="btn btn-success" value="submit">
+        </div>
+    </form>
+</div>
+</body>
+</html>

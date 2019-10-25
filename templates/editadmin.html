@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+    <form action="save" method="get">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="">Enter Email</label>
+            <input readonly type=Email required class="form-control" name="Email">
+
+        </div>
+
+        <div class="form-group">
+            <label for=""> Enter Password </label>
+            <input type=Password required  class="form-control" name="Password">
+         <div class="form-group">
+              <label for="">Enter Mobileno</label>
+            <input type=text required class="form-control" name="Mobileno">
+
+        </div>
+          <div class="form-group">
+              <label for="">Enter otp</label>
+            <input type=text required class="form-control" name="otp">
+
+        </div>
+
+              <div class="form-group">
+            <input type="submit" class="btn btn-success" value="submit">
+        </div>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    {% include 'headerfiles.html' %}
+</head>
+<body>
+<div class="container-fluid">
+    <div class="jumbotron">
+        <h1 class="text-center">View Book</h1>
+    </div>
+</div>
+<div class="container">
+    <select name="categoryname" id="categoryname" class="form-control" onchange="viewbooks(this.value)">
+        {% for foo in data %}
+            <option value="{{ foo }}">{{ foo }}</option>
+        {% endfor %}
+    </select>
+</div>
+
+{#show table#}
+<div class="container table-responsive">
+    <table>
+        <thead>
+        <tr>
+            <th>S.No</th>
+            <th>Title</th>
+        </tr>
+        </thead>
+    </table>
+</div>
+
+{#end of table#}
+{% include 'footer.html' %}
+<script src="{% static 'myjs/book.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% load staticfiles %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+ <div class="form-group">
+         {% csrf_token %}
+        <table class="table">
+            {% for p in ar %}
+            <tr>
+                <td>{{ p.Email }}</td>
+                <td>{{ p.Mobileno }}</td>
+                <td><a href="removeadmin?q={{ p.Email }}"><img style="width:25px;height:25px" src="{% static "del.png" %}"></a></td>
+                <td><a href="editadmin?q={{ p.Email }}"><img style="width:25px;height:25px" src="{% static "edit.png" %}"></a></td>
+
+
+
+
+            </tr>
+            {% endfor %}
+         </table>
+    </div>
+</div>
+
+</body>
+</html>
+
