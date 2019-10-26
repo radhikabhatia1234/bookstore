@@ -24,16 +24,42 @@
 </div>
 
 {#show table#}
-<div class="container table-responsive">
-    <table>
+<div class="container table-responsive mt-5">
+    <table class="table table-hover">
         <thead>
         <tr>
             <th>S.No</th>
             <th>Title</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Edition</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Category</th>
+            <th>Image</th>
+            <th colspan="2">Action</th>
         </tr>
         </thead>
+        <tbody id="viewbookdata"></tbody>
     </table>
 </div>
+
+
+{#modal popupedit#}
+<div class="modal" id="editbooks">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"></div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button class="btn close" type="button" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{#edit modalpopup#}
 
 {#end of table#}
 {% include 'footer.html' %}

@@ -41,5 +41,8 @@ urlpatterns = [
     # path("deleteaction",deleteaction),
     # path("editdataaction",editdataaction),
     # path("showbook2",showbook)
-    path("",booksview),
+    path("booksview",booksview),
+    path("viewbooks",viewbooks),
+    path("deltebooks",deltebooks),
+    path("editbook",editbook),
 ]

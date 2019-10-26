@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a891c3c7-5aab-4284-9d98-ba15dc682592" name="Default Changelist" comment="" />
+    <list default="true" id="a891c3c7-5aab-4284-9d98-ba15dc682592" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Goodreads/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Goodreads/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/myjs/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/myjs/book.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/books.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/books.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navigation.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +36,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -38,6 +45,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1SQdj3dMDD1Aoyjg0efniX0j5gu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -130,19 +138,33 @@
       <workItem from="1571935259685" duration="229000" />
       <workItem from="1571935725985" duration="8000" />
       <workItem from="1571938921344" duration="127000" />
-      <workItem from="1571978022037" duration="5153000" />
+      <workItem from="1571978022037" duration="19166000" />
+      <workItem from="1572070901250" duration="646000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Views.py</url>
-          <line>77</line>
+          <line>85</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
